@@ -60,7 +60,7 @@ def read_dcm(file_name):
   pixel_spacing = data.PixelSpacing
   
   return { 
-    hounsfield: np.copy(arr), 
-    grayscale: window_level(arr, wc, ww),
-    pixel_spacing: pixel_spacing
+    "hounsfield": np.copy(arr), 
+    "grayscale": window_level(arr, wc, ww),
+    "pixel_spacing": pixel_spacing
   }
